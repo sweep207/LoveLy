@@ -12,8 +12,15 @@
   <div id="ui">
     <label>Nhập các dòng chữ (mỗi dòng một câu):</label><br />
     <textarea id="inputText"></textarea><br />
-    <label>Nhập ảnh (các link ảnh không liền nhau):</label><br />
-    <textarea id="imageLinks"></textarea><br />
+   <!-- Image selection form group for accessibility -->
+<div class="form-group" aria-label="Chọn ảnh (tối đa 5 ảnh, có thể bỏ qua)">
+                    <label for="images">Chọn ảnh (tối đa 5 ảnh, có thể bỏ qua) </label>
+                    <p style="font-size: 0.9em; color: #ccc; margin-bottom: 0.5rem;">
+                        (ấn giữ Ctrl hoặc Shift để chọn nhiều ảnh khi dùng máy tính, hoặc chạm và giữ trên điện thoại)
+                    </p>
+                    <input type="file" id="images" accept="image/*" multiple style="width:100%;margin-bottom:0.5rem;">
+                    <div id="imagePreview" style="display:flex;gap:10px;margin-top:10px;"></div>
+                </div>
     <label>Chọn nhạc:</label>
     <select id="musicSelector">
       <option value="">-- Không chọn --</option>
