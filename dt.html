@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-gray-100 to-gray-200 min-h-screen flex items-center justify-center p-4">
+  <div class="w-full max-w-xs">
+    <div class="rounded-3xl bg-white shadow-md overflow-hidden">
+      <ul class="divide-y divide-gray-300">
+        <li class="flex justify-between items-center px-6 py-4 text-lg leading-6">
+          <span>Thư viện ảnh</span>
+          <i class="far fa-images text-black text-xl"></i>
+        </li>
+        <li class="flex justify-between items-center px-6 py-4 text-lg leading-6">
+          <span>Chụp ảnh</span>
+          <i class="fas fa-camera text-black text-xl"></i>
+        </li>
+        <li class="flex justify-between items-center px-6 py-4 text-lg leading-6 rounded-b-3xl">
+          <span>Chọn tệp</span>
+          <i class="far fa-folder text-black text-xl"></i>
+        </li>
+      </ul>
+    </div>
+    <div class="mt-6 flex space-x-4">
+      <button
+        class="flex items-center space-x-2 bg-gray-300 rounded-xl px-4 py-2 text-lg font-normal text-black"
+      >
+        <i class="fas fa-paperclip text-lg"></i>
+        <span>Upload</span>
+      </button>
+      <button
+        class="flex items-center space-x-2 text-black text-lg font-normal"
+      >
+        <i class="fas fa-camera text-lg"></i>
+        <span>Camera</span>
+      </button>
+    </div>
+  </div>
+</body>
+</html>
